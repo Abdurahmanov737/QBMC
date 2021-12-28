@@ -1,0 +1,76 @@
+
+body{
+    position: relative;
+}
+#services{
+
+    .services-left{
+
+        padding-top: 25px;
+
+        .services-top{
+            margin: 25px 0;
+            text-align: center;
+
+        }
+
+        .services-boxes{
+
+            position: relative;
+            padding-bottom: 25px;
+            .services-box{
+                border: 1px solid red;
+                border-radius: 15px;
+                text-align: center;
+                cursor: pointer;
+    
+                img{
+                    width: 100px;
+                }
+    
+                h5{
+                    padding-top: 15px;
+                }
+            }
+
+            .services-text{
+                border: 1px solid red;
+
+                position: absolute;
+                
+                z-index: 99;
+                // margin-top: 20px;
+                width: 100%;
+                text-align: center;
+                // right: 250px;    
+                visibility: hidden;
+                opacity: 0;
+                transition: .5s ease-in-out ;
+                i{
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    font-size: 25px;
+                    color: red;
+                    cursor: pointer;
+                }
+
+                h4{
+                    padding-top: 20px;
+                }
+
+                p{
+                    padding-top: 25px;
+                }
+
+
+                &.active{
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+
+     
+    }
+}

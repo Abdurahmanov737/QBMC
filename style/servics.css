@@ -1,0 +1,55 @@
+body {
+  position: relative;
+}
+
+#services .services-left {
+  padding-top: 25px;
+}
+#services .services-left .services-top {
+  margin: 25px 0;
+  text-align: center;
+}
+#services .services-left .services-boxes {
+  position: relative;
+  padding-bottom: 25px;
+}
+#services .services-left .services-boxes .services-box {
+  border: 1px solid red;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+#services .services-left .services-boxes .services-box img {
+  width: 100px;
+}
+#services .services-left .services-boxes .services-box h5 {
+  padding-top: 15px;
+}
+#services .services-left .services-boxes .services-text {
+  border: 1px solid red;
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+#services .services-left .services-boxes .services-text i {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 25px;
+  color: red;
+  cursor: pointer;
+}
+#services .services-left .services-boxes .services-text h4 {
+  padding-top: 20px;
+}
+#services .services-left .services-boxes .services-text p {
+  padding-top: 25px;
+}
+#services .services-left .services-boxes .services-text.active {
+  visibility: visible;
+  opacity: 1;
+}/*# sourceMappingURL=servics.css.map */

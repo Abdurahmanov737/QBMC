@@ -1,0 +1,80 @@
+.myMain {
+  display: flex;
+}
+.myMain .main-left,
+.myMain .sidebar {
+  margin-top: 15px;
+  padding-top: 20px;
+}
+.myMain .main-left h3 {
+  font-weight: 600;
+}
+.myMain .main-left img {
+  width: 100%;
+}
+.myMain .main-left span {
+  display: block;
+  padding-top: 50px;
+}
+.myMain .sidebar {
+  border: 1px solid red;
+  border-radius: 20px;
+}
+.myMain .sidebar .side-left {
+  padding-top: 15px;
+}
+.myMain .sidebar .side-right img {
+  border-radius: 20px;
+}
+
+.strategy {
+  margin-top: 50px;
+  padding-top: 40px;
+  border-top: 1px dashed black;
+}
+.strategy .strategy-right h3 {
+  font-weight: 600;
+  color: #4f5a65;
+}
+.strategy .strategy-right p {
+  color: #4f5a65;
+}
+.strategy .strategy-right button {
+  background-color: #66A2BA;
+  border: none;
+  padding: 10px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 20px;
+  transition: 0.3s ease-in-out;
+}
+.strategy .strategy-right button:hover {
+  background-color: #297ea0;
+}
+
+.deployment {
+  margin-top: 50px;
+  padding-top: 40px;
+  border-top: 1px dashed black;
+}
+.deployment .deployment-left h3 {
+  font-weight: 600;
+  color: #4f5a65;
+}
+.deployment .deployment-left p {
+  color: #4f5a65;
+}
+.deployment .deployment-left button {
+  background-color: #66A2BA;
+  border: none;
+  padding: 10px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 20px;
+  transition: 0.3s ease-in-out;
+}
+.deployment .deployment-left button:hover {
+  background-color: #297ea0;
+}/*# sourceMappingURL=style.css.map */
