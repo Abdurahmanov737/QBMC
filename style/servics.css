@@ -1,5 +1,5 @@
-body {
-  position: relative;
+#services-image {
+  width: 100%;
 }
 
 #services .services-left {
@@ -10,13 +10,14 @@ body {
   text-align: center;
 }
 #services .services-left .services-boxes {
-  position: relative;
+  position: relative !important;
   padding-bottom: 25px;
 }
 #services .services-left .services-boxes .services-box {
   border: 1px solid red;
   border-radius: 15px;
   text-align: center;
+  margin-top: 15px;
   cursor: pointer;
 }
 #services .services-left .services-boxes .services-box img {
@@ -27,10 +28,14 @@ body {
 }
 #services .services-left .services-boxes .services-text {
   border: 1px solid red;
-  position: absolute;
+  position: absolute !important;
+  padding: 0;
   z-index: 99;
-  width: 100%;
+  background-color: white;
+  width: 50%;
   text-align: center;
+  top: -50px;
+  left: -150px;
   visibility: hidden;
   opacity: 0;
   transition: 0.5s ease-in-out;
@@ -43,6 +48,10 @@ body {
   color: red;
   cursor: pointer;
 }
+#services .services-left .services-boxes .services-text img {
+  width: 100%;
+  height: auto;
+}
 #services .services-left .services-boxes .services-text h4 {
   padding-top: 20px;
 }
@@ -52,4 +61,23 @@ body {
 #services .services-left .services-boxes .services-text.active {
   visibility: visible;
   opacity: 1;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.mySlider {
+  width: 100%;
+  overflow: hidden !important;
+  padding-top: 50px;
+}
+.mySlider .slider-top-text {
+  padding-bottom: 50px;
+  text-align: center;
+}
+.mySlider .partner-slick .slick-list {
+  overflow: hidden !important;
+}
+.mySlider .partner-slick img {
+  width: 200px;
+  height: 150px;
 }/*# sourceMappingURL=servics.css.map */

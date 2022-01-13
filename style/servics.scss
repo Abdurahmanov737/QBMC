@@ -1,52 +1,64 @@
+// body{
+//     position: relative;
+// }
 
-body{
-    position: relative;
+
+#services-image {
+    width: 100%;
+
+
 }
-#services{
 
-    .services-left{
+#services {
+
+    .services-left {
 
         padding-top: 25px;
 
-        .services-top{
+        .services-top {
             margin: 25px 0;
             text-align: center;
 
         }
 
-        .services-boxes{
+        .services-boxes {
 
-            position: relative;
+            position: relative !important;
             padding-bottom: 25px;
-            .services-box{
+
+            .services-box {
                 border: 1px solid red;
                 border-radius: 15px;
                 text-align: center;
+                margin-top: 15px;
+                // position: absolute;
                 cursor: pointer;
-    
-                img{
+
+                img {
                     width: 100px;
                 }
-    
-                h5{
+
+                h5 {
                     padding-top: 15px;
                 }
             }
 
-            .services-text{
+            .services-text {
                 border: 1px solid red;
 
-                position: absolute;
-                
+                position: absolute !important;
+                padding: 0;
                 z-index: 99;
-                // margin-top: 20px;
-                width: 100%;
+                background-color: white;
+                width: 50%;
                 text-align: center;
-                // right: 250px;    
+                top: -50px;
+                left: -150px;
                 visibility: hidden;
                 opacity: 0;
-                transition: .5s ease-in-out ;
-                i{
+                transition: .5s ease-in-out;
+
+                i {
                     position: absolute;
                     top: 5px;
                     right: 5px;
@@ -55,22 +67,57 @@ body{
                     cursor: pointer;
                 }
 
-                h4{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+
+                h4 {
                     padding-top: 20px;
                 }
 
-                p{
+                p {
                     padding-top: 25px;
                 }
 
 
-                &.active{
+                &.active {
                     visibility: visible;
                     opacity: 1;
+                    left: 50%;
+                    transform: translate(-50%);
+
                 }
             }
         }
 
-     
+
     }
 }
+
+
+.mySlider{
+    width: 100%;
+    overflow: hidden !important;
+    padding-top: 50px;
+
+    .slider-top-text{
+        padding-bottom: 50px;
+        text-align: center;
+
+      
+    }
+    .partner-slick{
+
+     
+        .slick-list{
+            overflow: hidden !important;
+
+        }
+        img{
+            width: 200px;
+            height: 150px;
+        }
+    }
+}
+

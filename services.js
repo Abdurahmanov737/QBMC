@@ -1,31 +1,37 @@
-
-
 var box = document.querySelectorAll(".services-box")
 
 var openBox = document.querySelectorAll(".services-text")
 
-for (let i = 0; i < box.length; i++) {
-   box[i].onclick =function(){
+for (let myBoxes of box) {
+  myBoxes.onclick = function () {
 
-    for (let j =0; j < openBox.length; j++) {
-        
-    openBox[j].classList.remove("active")
-        
+    const boxAttr = Number(myBoxes.getAttribute("att"));
+    //  console.log(boxAttr)
+
+      for (let myOpens of openBox) {
+
+        myOpens.classList.remove("active")
+        const openAttr=Number(myOpens.getAttribute("attr"))
+
+        if(boxAttr == openAttr) {
+          myOpens.classList.toggle("active")
+        }
+
+      }
+
+
+
+
+      // this.nextElementSibling.classList.toggle("active")
+
     }
+  }
 
-    
-    this.nextElementSibling.classList.toggle("active")
-
-   }
-}
-
-$(".closeButton").click(function(){
+  $(".closeButton").click(function () {
     $(".services-text").removeClass("active")
-})
+  })
 
-
-
-$('.service-slick').slick({
+  $('.partner-slick').slick({
     dots: true,
     infinite: true,
     // autoplay: true,

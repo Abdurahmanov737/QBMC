@@ -19,7 +19,7 @@ window.onscroll = function () {
   function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         $(".scrollBtn").css(
-            "bottom", "5%"
+            "bottom", "3%"
         )
   
     } else {
@@ -42,3 +42,14 @@ window.onscroll = function () {
     document.documentElement.scrollTop = 0;
   }
 // this is for scrollBtn (end)
+
+$(".contact-click").click(function(){
+  var headerText=document.querySelector(".header-contact");
+  console.log(headerText)
+  headerText.classList.toggle("active")
+});
+
+
+$(".closeButtonHeader").click(function () {
+  $(".header-contact").removeClass("active")
+})

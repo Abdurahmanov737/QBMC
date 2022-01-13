@@ -17,12 +17,12 @@
 
     .header-logo {
 
-       
+
         align-items: center;
-      
+
         padding-top: 10px;
 
-        img{
+        img {
             width: 60px;
         }
 
@@ -41,19 +41,20 @@
             display: flex;
             margin: 0%;
 
-            
+
 
             li {
                 list-style: none;
                 height: 12vh;
-        
+
                 display: flex;
                 align-items: center;
                 transition: .3s ease-in-out;
                 cursor: pointer;
-              
+
                 position: relative;
-                &::after{
+
+                &::after {
                     position: absolute;
                     content: "";
                     width: 0%;
@@ -67,24 +68,25 @@
 
                 }
 
-                &.with-after{
-                //    background-color: #ffffff;
-                   &::after{
-                       
-                    width: 100%;
-                }
-                  
+                &.with-after {
+
+                    //    background-color: #ffffff;
+                    &::after {
+
+                        width: 100%;
+                    }
+
                 }
 
-                &:hover{
-                    &::after{
-                       
+                &:hover {
+                    &::after {
+
                         width: 100%;
                     }
                 }
-               
 
-             
+
+
 
                 a {
                     text-decoration: none;
@@ -112,15 +114,69 @@
             padding-left: 15px;
             transition: .3s ease-in-out;
 
-            &:hover{
+            &:hover {
                 transform: scale(1.2);
-               
+
             }
+        }
+
+        .header-contact {
+
+            border: 1px solid red;
+
+            position: absolute !important;
+            padding: 0;
+            z-index: 99;
+            background-color: white;
+            width: 25%;
+
+            top: 80px;
+            right: 100px;
+            visibility: hidden;
+            opacity: 0;
+            transition: .5s ease-in-out;
+
+            i {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                font-size: 25px;
+                color: red;
+                cursor: pointer;
+            }
+
+            ul{
+                // display: flex;
+                padding-top: 15px;
+                // margin: 0;
+                li{
+                    // margin: 0;
+                    list-style: none;
+                    padding-right: 10px;
+
+                    a{
+                        text-decoration: none;
+
+                        color: black;
+                       
+                    }
+                }
+            }
+
+
+            &.active {
+                visibility: visible;
+                opacity: 1;
+
+
+            }
+
         }
     }
 
 
 }
+
 // #header ends here
 
 
@@ -133,6 +189,9 @@
     background-color: #297ea0;
     width: 100%;
     padding-top: 15px;
+
+
+
 
     .footer-left {
 
@@ -177,6 +236,7 @@
         }
     }
 }
+
 // #footer ends here
 
 
@@ -184,7 +244,7 @@
 
 // scrollBtn starts here
 // this is for scroll to top button
-.scrollBtn{
+.scrollBtn {
 
     width: 55px;
     height: 55px;
@@ -197,23 +257,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    transition: .6s ease-in-out;
     z-index: 999;
     opacity: 1;
     cursor: pointer;
 
-    &:hover{
-        i{
+    &:hover {
+        i {
             color: red;
         }
     }
 
-    i{
+    i {
         transition: .3s ease-in-out;
         font-size: 20px;
         color: #ffffff;
     }
 }
+
 // scrollBtn ends here
 
 
@@ -225,7 +286,7 @@
 
 // this is for not showing scroll bar while loading
 // I am adding scroll bar after loading effect with JS
-body{
+body {
     overflow-y: hidden;
 }
 
@@ -234,11 +295,11 @@ body{
     padding: 8px;
     border: 2px solid transparent;
     animation: rotate linear 3.5s infinite;
-  }
+}
 
-  
 
-#myload{
+
+#myload {
     width: 100% !important;
     height: 100vh !important;
     display: flex;
@@ -249,34 +310,39 @@ body{
     z-index: 999;
     background-color: #f2f2f2;
 }
+
 .loader {
-  position: relative;
-  margin: 75px auto;
-  width: 200px;
-  height: 200px;
-  display: block;
-  overflow: hidden;
-  z-index: 999;
-  div {
-    height: 100%;
-  }
+    position: relative;
+    margin: 75px auto;
+    width: 200px;
+    height: 200px;
+    display: block;
+    overflow: hidden;
+    z-index: 999;
+
+    div {
+        height: 100%;
+    }
 }
 
-.loader1, .loader1 div {
+.loader1,
+.loader1 div {
     @include loaderDivMixin;
     border-top-color: #FFC800;
-    border-bottom-color:blue;
-  }
+    border-bottom-color: blue;
+}
 
 
 @keyframes rotate {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     50% {
-      transform: rotate(180deg);
+        transform: rotate(180deg);
     }
+
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
+}
